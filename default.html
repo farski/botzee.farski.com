@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34092397-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-34092397-6');
+    </script>
+
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name=description content=Botzee>
+    <meta name=slack-app-id content=A96J20G80>
+
+    <title>Botzee – Fun for Slack</title>
+
+    <link rel=stylesheet href=css.css>
+    <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Montserrat:700|Raleway">
+  </head>
+  <body>
+    <div id=installed>
+      <div class=content>
+        <h2>You've completed installation!</h2>
+        <p>Botzee is available in your workspace, so you can start playing right away!</p>
+        <p>Just <strong>/invite @Botzee</strong> to any channel or group, and you'll get some instructions on how to start your first game.</p>
+        <p>If you ever decide you don't need Botzee anymore, you can <a href=https://slack.com/apps/A342A2L2U>uninstall it</a> from Slack.</p>
+        <p>I hope you enjoy using the app. Drop me a note by <a href=mailto:botzee@chris.farski.com>email</a> or on <a href=https://twitter.com/farski>Twitter</a> with any questions, comments, or suggestions. You can also use the <strong>/botzee feedback</strong> command to send a note right from Slack.</p>
+      </div>
+    </div>
+    <div id=billboard class=callout>
+      <div id=billboard-image>
+        <img src=Botzee-icon.svg>
+      </div>
+      <div id=billboard-copy>
+        <h1>Botzee</h1>
+        <p>Botzee is a rolling dice game that you play in <a href="https://slack.com/">Slack</a> with your friends and coworkers.</p>
+        <a id=install-button href="https://slack.com/oauth/v2/authorize?client_id=12676005973.106078088096&scope=app_mentions:read,channels:history,channels:read,chat:write,commands,groups:history,groups:read,im:history,im:read,im:write,mpim:history,mpim:read,team:read,users:read,users:read.email">
+          <img alt="Add to Slack" height=40 width=139 src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+        </a>
+      </div>
+    </div>
+    <div class=content>
+      <h2>Pricing</h2>
+      <p>At the moment, Botzee is completely free. That may change in the future depending on demand and operating costs. If you'd like to support Botzee, you can <a href="https://www.buymeacoffee.com/botzee">buy me a coffee</a>.</p>
+    </div>
+    <div class=content>
+      <h2>How Botzee Works</h2>
+      <p>After you <a href="https://slack.com/oauth/v2/authorize?client_id=12676005973.106078088096&scope=app_mentions:read,channels:history,channels:read,chat:write,commands,groups:history,groups:read,im:history,im:read,im:write,mpim:history,mpim:read,team:read,users:read,users:read.email">install</a> Botzee, a new bot called @Botzee will join your workspace. You can invite @Botzee to any channel, group, or DM and by using a few simple commands your whole team can play the game. When you complete the installation and invite @Botzee to a channel, you'll get some more instructions on how to play.</p>
+      <p><img src=invite.png width=330><img src=score.png width=311></p>
+      <p>Botzee is designed to add a little bit of fun to your Slack. It can be played at any speed, and hopefully is a good kind of occasional distraction. If you try Botzee and have any suggestions or just want to let me know how fun it's been, please <a href="mailto:botzee@chris.farski.com">send a note</a>!</p>
+      <p>Installing the app will also add a <a href=https://get.slack.help/hc/en-us/articles/201259356-Built-in-slash-commands>slash command</a> to your workspace. Using <strong>/botzee</strong> allows you to interact directly with Botzee for the following commands: status, help, and board (e.g., <strong>/botzee status</strong>). You can also use these commands without <strong>/botzee</strong>.</p>
+    </div>
+    <div class=callout>
+      <div class=content id=support>
+        <h2>Help &amp; Support</h2>
+        <p>If you have any trouble with Botzee, would like to make a feature request, or have any general questions, comments, or concerns, please email me:</p>
+        <p><strong><a href=mailto:botzee@chris.farski.com>botzee@chris.farski.com</a></strong></p>
+        <p>If you ever want Botzee to stop being a part of your workspace, you can uninstall the app though Slack. This will stop sending all information from your workspace to Botzee servers.</p>
+      </div>
+      <div class=content id=privacy>
+        <h3>Privacy &amp; Data Protection</h3>
+        <p>No information collected through the use of the Botzee app is ever sold or shared.</p>
+        <p>As little personal information as possible is collected when you use Botzee – only what is needed to allow the app to work. This includes:</p>
+        <ul>
+          <li>The Slack user ID of players (ex. U89AJS4AB)</li>
+          <li>Your Slack team ID and team name</li>
+          <li>An access token that Slack creates for your team</li>
+        </ul>
+        <p>Due to the nature of building Slack apps, most information (messages, files, etc.) shared in channels or groups to which the Botzee bot user belongs may be visible to the Botzee servers. Only information that appears to be relevant to a Botzee game is ever intentionally processed or stored. Other information is discared as quickly as possible, but may be logged temporarily as part of system monitoring or maintanance.</p>
+        <p>All stored data, including the Slack access token, are protected by <a href=https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EncryptionAtRest.html>encryption at rest</a>. All data transferred between Slack servers and Botzee servers is sent using secure HTTPS.</p>
+        <p>This webpage includes <a href=https://www.google.com/analytics/>Google Analytics</a> and <a href="https://fonts.google.com">Google Fonts</a>, but the Botzee app itself uses no third-party telemetry, tracking, or analytics services.</p>
+      </div>
+    </div>
+    <div class=footer>
+      <div class=content>
+        <p>Botzee is created and maintained by <a href=https://www.farski.com/>Chris Kalafarski</a> in Boston.</p>
+      </div>
+    </div>
+  </body>
+</html>

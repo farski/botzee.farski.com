@@ -1,0 +1,54 @@
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  border: 0;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { color: #322; font-family: 'Montserrat', sans-serif; font-weight: 700; }
+h2 { color: #322; font-family: 'Montserrat', sans-serif; font-weight: 700; }
+
+.callout {
+  background: #F9F7F7;
+  padding: 80px;
+}
+
+#billboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "image copy";
+}
+
+#billboard-image { grid-area: image; }
+#billboard-image img { float: right; max-width: 400px; margin-right: 25px; }
+
+#billboard-copy { grid-area: copy; }
+#billboard-copy h1 { font-size: 6em; line-height: 0em; }
+#billboard-copy p { color: #544; font-size: 1.25em; line-height: 1.5em; max-width: 350px; padding-left: 10px; }
+#billboard-copy p a { color: #433; }
+
+.content {
+  margin: 50px auto;
+  max-width: 60%;
+}
+
+#installed { background: #b8e3c7; display: none; padding: 60px; }
+#installed:target { display: block; }
+#installed p strong { background: #ffffff77; display: inline-block; font-family: monospace; padding: 5px; }
+
+.footer {
+  background: #191717;
+  color: #eee;
+  font-size: 0.75em;
+  padding: 10px 80px;
+}
+
+.footer a {
+  color: inherit;
+}
