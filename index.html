@@ -60,7 +60,9 @@
           <li>An access token that Slack creates for your team</li>
         </ul>
         <p>Due to the nature of building Slack apps, most information (messages, files, etc.) shared in channels or groups to which the Botzee bot user belongs may be visible to the Botzee servers. Only information that appears to be relevant to a Botzee game is ever intentionally processed or stored. Other information is discared as quickly as possible, but may be logged temporarily as part of system monitoring or maintanance.</p>
-        <p>All stored data, including the Slack access token, are protected by <a href=https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EncryptionAtRest.html>encryption at rest</a>. All data transferred between Slack servers and Botzee servers is sent using secure HTTPS.</p>
+        <p>Botzee does not retain any customer data, besides the game data it creates (which includes no identifiable information), and IDs and tokens provided by Slack (which themselves contain no identifiable information). Slack IDs are never resolved to any other form (handles, names, etc) and stored. Game data is stored indefinitely.</p>
+        <p>Botzee will remove customer data in accordance with GDPR, CCPA, and any other regulations that exist for users in the region they are located.</p>
+        <p>All stored data, including the Slack access token, are protected by <a href=https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EncryptionAtRest.html>encryption at rest</a>. All data transferred between Slack servers and Botzee servers is sent using secure HTTPS. Application data is retained in encrypted Amazon DynamoDB tables. Logs are maintained temporarily in Amazon CloudWatch Logs.</p>
         <p>Neither this webpage nor the Botzee app use any third-party telemetry, tracking, or analytics services.</p>
       </div>
     </div>
